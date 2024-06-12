@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Documents</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');</style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/verified.png">
+            <h1>Verify Documents</h1>
+            <p>We will need the following documents to proceed</p>
+        </div>
+        <div class="content">
+            <ul>
+                <li id="facial-verification"><span>!</span>Facial Verification</li>
+                <li id="selfie-with-ic"><span>!</span>Selfie with IC</li>
+                <li id="drivers-license"><span>!</span>Driver’s License</li>
+            </ul>
+        </div>
+        <div class="note">
+            <p>• All documents are for Osacar application purposes only and will not be shared with any 3rd party.</p>
+        </div>
+        <br>
+        <div class="selfie-section" id="selfie-section">
+            <img src="img/selfie.png">
+            <h2>Upload a selfie with your IC</h2>
+            <p>Make sure you are not covering any part of your face and IC details are clear to read with no blur or glare</p>
+            <div class="upload-photo" id="upload-photo-container" onclick="document.getElementById('fileInput1').click();">
+                <img src="img/cam.png">
+                <p>Upload a photo</p>
+                <input type="file" id="fileInput1" accept="image/*" onchange="previewFile(1)">
+            </div>
+        </div>
+        
+        <div class="submit-section">
+            <p>The information collected shall be used, processed and stored in accordance with Osacar Privacy Notice</p>
+            <button class="submit-button" onclick="submitForm()">Submit</button>
+            <button class="next-button" onclick="redirectToNextPage()">Next</button>
+        </div>
+    </div>
+
+</body>
+</html>

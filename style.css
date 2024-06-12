@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Chonburi&family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Rubik", sans-serif;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 12%;
+}
+.container {
+    margin-top: 3%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+}
+.header {
+    margin-bottom: 20px;
+}
+.header img {
+    width: 100px;
+    height: auto;
+}
+.header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.content {
+    text-align: left;
+}
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.content ul li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.content ul li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #db8787;
+    color: white;
+}
+.content ul li.complete span {
+    background-color: green;
+}
+.note {
+    background-color: #e7f4ff;
+    padding: 10px;
+    border-radius: 4px;
+    color: #007bff;
+    margin-top: 20px;
+    text-align: left;
+}
+.note p {
+    margin: 0;
+}
+.selfie-section {
+    text-align: center;
+    margin-top: 30px;
+}
+.selfie-section img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.upload-photo {
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upload-photo img {
+    width: 40px;
+    height: auto;
+}
+.upload-photo p {
+    margin: 10px 0 0 0;
+    color: #007bff;
+}
+.submit-section {
+    margin-top: 20px;
+}
+.submit-section p {
+    font-size: 12px;
+    color: #777;
+    text-align: left;
+}
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.upload-photo input[type="file"] {
+    display: none;
+}
+.next-button {
+    display: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
